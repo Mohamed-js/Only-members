@@ -14,6 +14,8 @@ In this project we:
 - Made authentications for their inputs.
 - Made associations between the user and the post model.
 
+![screenshot](./screenshot.png)
+
 ## Usage
 
 - Clone the repo "https://github.com/Mohamed-js/memberss-only.git".
