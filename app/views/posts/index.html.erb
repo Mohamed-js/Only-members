@@ -1,0 +1,23 @@
+
+
+<div class="center m-auto">
+<h1 class="text-center">Posts</h1>
+<% if user_signed_in? %>
+<%= button_to 'New Post', new_post_path, method: :get, class:"btn btn-success btn-block" %>
+<% end %>
+
+    <% @posts.each do |post| %>
+
+    <div class="container border rounded mt-2 my-3 p-3">
+      <% if user_signed_in? %>
+        <h3><%= post.user.name %></h3>
+      <% end %>
+      <p><%= post.body %></p>
+    </div>
+
+    <% end %>
+
+<br>
+
+</div>
+
